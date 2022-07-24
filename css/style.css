@@ -1,9 +1,17 @@
-/* REST */
+/* RESET */
 
 * {margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
 nav, ul {list-style: none;}
 a {text-decoration: none; cursor: pointer; opacity: 0.9;}
 a:hover {opacity: 1;}
+
+/* HELPERS */
+
+.verdeescuro {color: #191c03}
+.colorwh {color: #fff}
+.bgwh {background-color: #fff}
+.width {width: 100%}
+.margbt {margin-bottom: 15px}
 
 /* HEADER */
 
@@ -16,6 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    background-color: #fff;
 }
 
 header img {width: 200px;}
@@ -28,4 +37,33 @@ header li:last-child {margin-right: 0;}
 @media (max-width: 700px) {
     header {flex-direction: column;}
     header img {margin-bottom: 15px;}
+}
+
+/* HERO */
+
+.hero {
+    background-image: url(/img/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1{font-size:3.2em; margin-bottom: 15px}
+.hero h3 {font-size: 2em; margin-bottom: 15px}
+.btn {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #191c03;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {font-size: 2.2em}
+    .hero h3 {font-size: 1em}
 }
